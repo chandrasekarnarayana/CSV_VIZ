@@ -38,8 +38,15 @@ conda install pandas matplotlib seaborn pyqt
 ```
 
 ---
+### Installation from pip
 
-### Installation
+1. **pip command for installation:**
+
+   ```bash
+   pip install csv-visualizer-tool
+   ```
+   
+### Installation from github
 
 1. **Clone the repository:**
 
