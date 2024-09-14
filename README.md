@@ -1,8 +1,9 @@
-## CSV Visualization Tool
+# CSV Visualization Tool
 
 This project provides a graphical user interface (GUI) for visualizing CSV data using various Seaborn and Matplotlib plots. The GUI is built using PyQt5 and supports multiple types of plots including scatter plots, box plots, violin plots, and more. It also allows for features like trendlines, error bars, and logarithmic scaling.
 
-### Features:
+## Features
+
 - **Scatter Plot** with optional trendline, gridlines, and error bars.
 - **Box Plot** with options for orientation and flier visibility.
 - **Violin Plot** with customizable orientation and splitting.
@@ -41,25 +42,27 @@ conda install pandas matplotlib seaborn pyqt
 ### Installation
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/chandrasekarnarayana/csv_viz.git
    cd csv_viz
    ```
 
 2. **Install the required dependencies:**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 3. **Run the application:**
    After installing the dependencies, you can run the application using the following command:
-   
+
    ```bash
    csv_viz
    ```
 
    Alternatively, you can run it directly via Python:
-   
+
    ```bash
    python -m csv_viz.main_window
    ```
@@ -85,6 +88,7 @@ conda install pandas matplotlib seaborn pyqt
 Here is an example workflow to visualize data:
 
 1. Run the application with the command:
+
    ```bash
    csv_viz
    ```
@@ -102,6 +106,7 @@ Here is an example workflow to visualize data:
 ### Troubleshooting
 
 1. **ModuleNotFoundError**: If you encounter this error for any package, ensure all dependencies are installed correctly:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -131,4 +136,4 @@ Chandrasekar Subramani Narayana
 
 ### Version
 
-**0.1.0**
+#### 0.1.0
