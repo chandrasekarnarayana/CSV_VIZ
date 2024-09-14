@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QPushButton, QComboBox, QFileDialog, QDialog, QTableWidget, QTableWidgetItem
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas, NavigationToolbar2QT
 from matplotlib.figure import Figure
 from csv_viz.plot_settings.scatter_plot_dialog import ScatterPlotDialog
 from csv_viz.plot_settings.boxplot_dialog import BoxPlotDialog
@@ -36,6 +36,8 @@ class CSVVizApp(QMainWindow):
 
         # Canvas for plotting
         self.canvas = FigureCanvas(Figure(figsize=(7, 5)))
+        self.toolbar = NavigationToolbar2QT(self.canvas, self)  # Add Matplotlib toolbar
+        self.layout.addWidget(self.toolbar)
         self.layout.addWidget(self.canvas)
 
         self.central_widget.setLayout(self.layout)
