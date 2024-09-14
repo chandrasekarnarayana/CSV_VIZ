@@ -1,0 +1,4 @@
+pandas>=1.3.0   # Updated to ensure compatibility with 'use_inf_as_null'
+matplotlib>=3.4.0
+seaborn>=0.11.2 # Minimum version required for compatibility
+PyQt5>=5.12
