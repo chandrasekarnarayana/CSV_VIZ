@@ -6,7 +6,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setup(
-    name='csv_viz',
+    name='csv_visualizer_tool',
     version='0.1.0',
     description='A CSV visualization tool with Seaborn plots and GUI using PyQt5',
     long_description=long_description,  # This references your README file
